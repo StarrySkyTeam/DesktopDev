@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="..\UnityCommon.props" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{13A45C13-3265-47B8-BC48-A553B569DF55}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StarrySky</RootNamespace>
+    <AssemblyName>StarrySkyPro</AssemblyName>
+    <DefaultLanguage>zh-CN</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>WSATestCertificate.pfx</PackageCertificateKeyFile>
+    <AppxPackageSigningEnabled>true</AppxPackageSigningEnabled>
+    <PlatformShortName>$(Platform)</PlatformShortName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP;UNITY_METRO;UNITY_WSA;UNITY_UWP;UNITY_WSA_10_0</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>False</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP;UNITY_METRO;UNITY_WSA;UNITY_UWP;UNITY_WSA_10_0</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>False</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Master|ARM'">
+    <OutputPath>bin\ARM\Master\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP;UNITY_METRO;UNITY_WSA;UNITY_UWP;UNITY_WSA_10_0</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>True</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP;UNITY_METRO;UNITY_WSA;UNITY_UWP;UNITY_WSA_10_0</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>False</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP;UNITY_METRO;UNITY_WSA;UNITY_UWP;UNITY_WSA_10_0</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>False</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Master|x64'">
+    <OutputPath>bin\x64\Master\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP;UNITY_METRO;UNITY_WSA;UNITY_UWP;UNITY_WSA_10_0</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>True</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP;UNITY_METRO;UNITY_WSA;UNITY_UWP;UNITY_WSA_10_0</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>False</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP;UNITY_METRO;UNITY_WSA;UNITY_UWP;UNITY_WSA_10_0</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>False</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Master|x86'">
+    <OutputPath>bin\x86\Master\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP;UNITY_METRO;UNITY_WSA;UNITY_UWP;UNITY_WSA_10_0</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>True</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'x64'">
+    <UnityBits>64</UnityBits>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' != 'x64'">
+    <UnityBits>32</UnityBits>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="project.json" />
+    <SDKReference Include="Microsoft.VCLibs, Version=14.0">
+      <Name>Visual C++ 2015 Runtime for Universal Windows Platform Apps</Name>
+    </SDKReference>
+    <SDKReference Include="WindowsMobile, Version=10.0.10586.0">
+      <Name>Windows Mobile Extensions for the UWP</Name>
+    </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Content Include="PageFolder\ColorPaint\html\canju.png" />
+    <Content Include="PageFolder\ColorPaint\html\chengbao.png" />
+    <Content Include="PageFolder\ColorPaint\html\chezi.png" />
+    <Content Include="PageFolder\ColorPaint\html\feiji.png" />
+    <Content Include="PageFolder\ColorPaint\html\huoche.png" />
+    <Content Include="PageFolder\ColorPaint\html\ColorPaint.html" />
+    <Content Include="ResourceFolder\AlphaBeta\10ao.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\10ao.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\11ou.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\11ou.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\12iu.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\12iu.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\13ie.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\13ie.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\14ve.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\14ve.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\15er.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\15er.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\16an.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\16an.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\17en.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\17en.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\18in.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\18in.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\19un.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\19un.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\1a.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\1a.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\20vn.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\20vn.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\21ang.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\21ang.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\22eng.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\22eng.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\23ing.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\23ing.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\24ong.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\24ong.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\25b.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\25b.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\26d.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\26d.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\27p.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\27p.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\28t.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\28t.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\29m.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\29m.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\2o.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\2o.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\30n.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\30n.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\31f.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\31f.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\32l.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\32l.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\33g.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\33g.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\34k.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\34k.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\35h.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\35h.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\36j.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\36j.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\37q.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\37q.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\38x.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\38x.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\39zh.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\39zh.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\3e.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\3e.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\40ch.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\40ch.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\41sh.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\41sh.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\42r.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\42r.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\43z.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\43z.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\44c.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\44c.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\45s.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\45s.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\46y.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\46y.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\47w.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\47w.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\4i.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\4i.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\5u.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\5u.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\6v.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\6v.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\7ai.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\7ai.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\8ei.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\8ei.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\9ui.jpg" />
+    <Content Include="ResourceFolder\AlphaBeta\9ui.mp3" />
+    <Content Include="ResourceFolder\AlphaBeta\AlphaBeta.xml" />
+    <Content Include="ResourceFolder\MainPageIntroduce.html" />
+    <Content Include="ResourceFolder\NurseryRhythm\che0.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\che1.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\che2.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\che3.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\che4.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\chuan0.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\chuan1.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\chuan2.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\chuan3.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\chuan4.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\da0.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\da1.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\da2.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\da3.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\da4.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\ding0.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\ding1.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\ding2.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\ding3.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\ding4.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\e0.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\e1.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\e2.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\e3.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\e4.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\gong0.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\gong1.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\gong2.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\gong3.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\gong4.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\guang0.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\guang1.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\guang2.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\guang3.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\guang4.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\hu0.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\hu1.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\hu2.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\hu3.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\hu4.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\jing0.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\jing1.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\jing2.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\jing3.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\jing4.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\kan0.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\kan1.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\kan2.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\kan3.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\kan4.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\pai0.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\pai1.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\pai2.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\pai3.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\pai4.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\qi0.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\qi1.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\qi2.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\qi3.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\qi4.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\reng0.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\reng1.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\reng2.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\reng3.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\reng4.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\rhythm.xml" />
+    <Content Include="ResourceFolder\NurseryRhythm\shang0.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\shang1.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\shang2.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\shang3.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\shang4.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\shui0.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\shui1.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\shui2.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\shui3.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\shui4.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\xi0.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\xi1.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\xi2.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\xi3.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\xi4.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\xie0.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\xie1.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\xie2.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\xie3.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\xie4.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\xing0.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\xing1.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\xing2.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\xing3.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\xing4.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\xue0.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\xue1.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\xue2.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\xue3.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\xue4.wav" />
+    <Content Include="ResourceFolder\NurseryRhythm\上楼梯.png" />
+    <Content Include="ResourceFolder\NurseryRhythm\光脚丫.png" />
+    <Content Include="ResourceFolder\NurseryRhythm\叮铃铃.png" />
+    <Content Include="ResourceFolder\NurseryRhythm\大鞋子.png" />
+    <Content Include="ResourceFolder\NurseryRhythm\学画画.png" />
+    <Content Include="ResourceFolder\NurseryRhythm\小星星.png" />
+    <Content Include="ResourceFolder\NurseryRhythm\小汽车.png" />
+    <Content Include="ResourceFolder\NurseryRhythm\小镜子.png" />
+    <Content Include="ResourceFolder\NurseryRhythm\小鹅毛.png" />
+    <Content Include="ResourceFolder\NurseryRhythm\扔皮球.png" />
+    <Content Include="ResourceFolder\NurseryRhythm\拍拍手.png" />
+    <Content Include="ResourceFolder\NurseryRhythm\搭积木.png" />
+    <Content Include="ResourceFolder\NurseryRhythm\洗澡歌.png" />
+    <Content Include="ResourceFolder\NurseryRhythm\看画报.png" />
+    <Content Include="ResourceFolder\NurseryRhythm\睡着了.png" />
+    <Content Include="ResourceFolder\NurseryRhythm\穿衣歌.png" />
+    <Content Include="ResourceFolder\NurseryRhythm\胡萝卜.png" />
+    <Content Include="ResourceFolder\NurseryRhythm\起床歌.png" />
+    <Content Include="ResourceFolder\NurseryRhythm\逛公园.png" />
+    <Page Include="PageFolder\AlphaBeta\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PageFolder\ColorPaint\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageFolder\GameCenterPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PageFolder\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PageFolder\NurseryRhythm\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PageFolder\Unity\GamePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="ControlFolder\AlphaBetaClass.cs" />
+    <Compile Include="ControlFolder\Library.cs" />
+    <Compile Include="ControlFolder\NurseryRhythmClass.cs" />
+    <Compile Include="PageFolder\AlphaBeta\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageFolder\ColorPaint\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageFolder\GameCenterPage.xaml.cs">
+      <DependentUpon>GameCenterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageFolder\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageFolder\NurseryRhythm\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageFolder\Unity\GamePage.xaml.cs">
+      <DependentUpon>GamePage.xaml</DependentUpon>
+    </Compile>
+    <Content Include="Assets\SplashScreen.scale-200.png">
+    </Content>
+    <Content Include="Assets\Square150x150Logo.scale-200.png">
+    </Content>
+    <Content Include="Assets\Square44x44Logo.scale-200.png">
+    </Content>
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    </Content>
+    <Content Include="Assets\StoreLogo.png">
+    </Content>
+    <Content Include="Assets\Wide310x150Logo.scale-200.png">
+    </Content>
+    <Compile Include="PageFolder\Unity\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageFolder\WebPage.xaml.cs">
+      <DependentUpon>WebPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+    </Compile>
+    <Content Include="Properties\Default.rd.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Page Include="PageFolder\Unity\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageFolder\WebPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>.\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-UnityScript">
+      <HintPath>.\Assembly-UnityScript.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang">
+      <HintPath>.\Boo.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>.\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="WinRTLegacy">
+      <HintPath>.\WinRTLegacy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>.\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>.\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Content Include="Data\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="WSATestCertificate.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityPlayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Players\UAP\$(PlatformTarget)\$(Configuration)\UnityPlayer.winmd</HintPath>
+    </Reference>
+    <Reference Include="WinRTBridge">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Players\UAP\$(PlatformTarget)\$(Configuration)\WinRTBridge.winmd</HintPath>
+    </Reference>
+    <Reference Include="BridgeInterface">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Players\UAP\$(PlatformTarget)\$(Configuration)\BridgeInterface.winmd</HintPath>
+    </Reference>
+    <Reference Include="UnityEngineDelegates">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Players\UAP\$(PlatformTarget)\$(Configuration)\UnityEngineDelegates.winmd</HintPath>
+    </Reference>
+    <Reference Include="UnityEngineProxy">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Players\UAP\$(PlatformTarget)\$(Configuration)\UnityEngineProxy.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <ItemGroup>
+    <UnprocessedFile Include="$(ProjectDir)Unprocessed\*" />
+  </ItemGroup>
+  <ItemGroup />
+  <Target Name="BeforeResolveReferences" Condition="'$(BuildingProject)' == 'true'">
+    <Message Importance="high" Text="UnityInstallationDir &quot;$(UnityInstallationDir)&quot;." />
+    <Message Importance="high" Text="UnityWSAPlayerDir &quot;$(UnityWSAPlayerDir)&quot;." />
+    <Message Importance="high" Text="UnityProjectDir &quot;$(UnityProjectDir)&quot;." />
+    <Message Importance="high" Text="Copying unprocessed assemblies..." />
+    <Copy SourceFiles="@(UnprocessedFile)" DestinationFolder="$(ProjectDir)" />
+  </Target>
+  <Target Name="BeforeCompile" Condition="'$(BuildingProject)' == 'true'">
+    <PropertyGroup Condition=" '$(Configuration)' == 'Master' ">
+      <RemoveDebuggableAttribute>True</RemoveDebuggableAttribute>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' != 'Master' ">
+      <RemoveDebuggableAttribute>False</RemoveDebuggableAttribute>
+    </PropertyGroup>
+    <Message Importance="high" Text="Running AssemblyConverter..." />
+    <Exec Command="&quot;$(UnityWSAToolsDir)\AssemblyConverter.exe&quot; -platform=uap -lock=&quot;$(ProjectDir)project.lock.json&quot; -bits=$(UnityBits) -removeDebuggableAttribute=$(RemoveDebuggableAttribute) -path=&quot;.&quot; -path=&quot;..\Players\UAP\$(PlatformTarget)\$(Configuration)&quot; &quot;$(ProjectDir)Assembly-CSharp.dll&quot; &quot;$(ProjectDir)Assembly-UnityScript.dll&quot; &quot;$(ProjectDir)UnityEngine.dll&quot; &quot;$(ProjectDir)UnityEngine.UI.dll&quot; &quot;$(ProjectDir)UnityEngine.Networking.dll&quot;" />
+    <Message Importance="high" Text="AssemblyConverter done." />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

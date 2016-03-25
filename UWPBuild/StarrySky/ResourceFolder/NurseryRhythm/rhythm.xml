@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rhythmlist>
+	<rhythm id="1">
+    <name>起床歌</name>
+    <pic>起床歌.png</pic>
+		<section id="1">
+			<content>起床歌</content>
+			<sound>qi0.wav</sound>
+		</section>
+		<section id="2">
+			<content>小宝宝，起得早，</content>
+			<sound>qi1.wav</sound>
+		</section>
+		<section id="3">
+			<content>睁开眼，眯眯笑，</content>
+			<sound>qi2.wav</sound>
+		</section>
+		<section id="4">
+			<content>咿呀呀，学说话，</content>
+			<sound>qi3.wav</sound>
+		</section>
+		<section id="5">
+			<content>伸伸手，要人抱。</content>
+			<sound>qi4.wav</sound>
+		</section>
+	</rhythm>
+
+	<rhythm id="2">
+    <name>穿衣歌</name>
+    <pic>穿衣歌.png</pic>
+		<section id="1">
+			<content>穿衣歌</content>
+			<sound>chuan0.wav</sound>
+		</section>
+		<section id="2">
+			<content>小胳膊，穿袖子，</content>
+			<sound>chuan1.wav</sound>
+		</section>
+		<section id="3">
+			<content>穿上衣，扣扣子，</content>
+			<sound>chuan2.wav</sound>
+		</section>
+		<section id="4">
+			<content>小脚丫，穿裤子，</content>
+			<sound>chuan3.wav</sound>
+		</section>
+		<section id="5">
+			<content>穿上袜子，穿鞋子。</content>
+			<sound>chuan4.wav</sound>
+		</section>
+	</rhythm>
+
+	<rhythm id="3">
+    <name>小镜子</name>
+    <pic>小镜子.png</pic>
+		<section id="1">
+			<content>小镜子</content>
+			<sound>jing0.wav</sound>
+		</section>
+		<section id="2">
+			<content>小镜子，圆又圆，</content>
+			<sound>jing1.wav</sound>
+		</section>
+		<section id="3">
+			<content>看宝宝，露笑脸，</content>
+			<sound>jing2.wav</sound>
+		</section>
+		<section id="4">
+			<content>闭上眼，做个梦，</content>
+			<sound>jing3.wav</sound>
+		</section>
+		<section id="5">
+			<content>变月亮，挂上天。</content>
+			<sound>jing4.wav</sound>
+		</section>
+	</rhythm>
+
+	<rhythm id="4">
+    <name>叮铃铃</name>
+    <pic>叮铃铃.png</pic>
+		<section id="1">
+			<content>叮铃铃</content>
+			<sound>ding0.wav</sound>
+		</section>
+		<section id="2">
+			<content>叮铃铃，叮铃铃，</content>
+			<sound>ding1.wav</sound>
+		</section>
+		<section id="3">
+			<content>一会远，一会近，</content>
+			<sound>ding2.wav</sound>
+		</section>
+		<section id="4">
+			<content>小宝宝，耳朵灵，</content>
+			<sound>ding3.wav</sound>
+		</section>
+		<section id="5">
+			<content>听铃声，找到铃。</content>
+			<sound>ding4.wav</sound>
+		</section>
+	</rhythm>
+
+	<rhythm id="5">
+    <name>看画报</name>
+    <pic>看画报.png</pic>
+		<section id="1">
+			<content>看画报</content>
+			<sound>kan0.wav</sound>
+		</section>
+		<section id="2">
+			<content>小娃娃，看画报，</content>
+			<sound>kan1.wav</sound>
+		</section>
+		<section id="3">
+			<content>睁大眼，仔细瞧,</content>
+			<sound>kan2.wav</sound>
+		</section>
+		<section id="4">
+			<content>布娃娃，哈哈笑，</content>
+			<sound>kan3.wav</sound>
+		</section>
+		<section id="5">
+			<content>伸出手，要你抱。</content>
+			<sound>kan4.wav</sound>
+		</section>
+	</rhythm>
+
+	<rhythm id="6">
+    <name>胡萝卜</name>
+    <pic>胡萝卜.png</pic>
+		<section id="1">
+			<content>胡萝卜</content>
+			<sound>hu0.wav</sound>
+		</section>
+		<section id="2">
+			<content>胡萝卜，大白菜，</content>
+			<sound>hu1.wav</sound>
+		</section>
+		<section id="3">
+			<content>嫩豆腐，鲜牛奶，</content>
+			<sound>hu2.wav</sound>
+		</section>
+		<section id="4">
+			<content>红苹果，绿黄瓜，</content>
+			<sound>hu3.wav</sound>
+		</section>
+		<section id="5">
+			<content>吃得多，长得快。</content>
+			<sound>hu4.wav</sound>
+		</section>
+	</rhythm>
+
+	<rhythm id="7">
+    <name>逛公园</name>
+    <pic>逛公园.png</pic>
+		<section id="1">
+			<content>逛公园</content>
+			<sound>gong0.wav</sound>
+		</section>
+		<section id="2">
+			<content>逛公园，宝宝笑，</content>
+			<sound>gong1.wav</sound>
+		</section>
+		<section id="3">
+			<content>东看看，西瞧瞧，</content>
+			<sound>gong2.wav</sound>
+		</section>
+		<section id="4">
+			<content>花儿香，鸟儿叫，</content>
+			<sound>gong3.wav</sound>
+		</section>
+		<section id="5">
+			<content>小草绿，小树摇。</content>
+			<sound>gong4.wav</sound>
+		</section>
+	</rhythm>
+
+	<rhythm id="8">
+    <name>小汽车</name>
+    <pic>小汽车.png</pic>
+		<section id="1">
+			<content>小汽车</content>
+			<sound>hu0.wav</sound>
+		</section>
+		<section id="2">
+			<content>小汽车，嘀嘀嘀，</content>
+			<sound>hu1.wav</sound>
+		</section>
+		<section id="3">
+			<content>开过来，开过去，</content>
+			<sound>hu2.wav</sound>
+		</section>
+		<section id="4">
+			<content>小宝宝，当司机，</content>
+			<sound>hu3.wav</sound>
+		</section>
+		<section id="5">
+			<content>送妈妈，上班去。</content>
+			<sound>hu4.wav</sound>
+		</section>
+	</rhythm>
+
+	<rhythm id="9">
+    <name>小鹅毛</name>
+    <pic>小鹅毛.png</pic>
+		<section id="1">
+			<content>小鹅毛</content>
+			<sound>e0.wav</sound>
+		</section>
+		<section id="2">
+			<content>小鹅毛，飘呀飘，</content>
+			<sound>e1.wav</sound>
+		</section>
+		<section id="3">
+			<content>飘上天，不见了，</content>
+			<sound>e2.wav</sound>
+		</section>
+		<section id="4">
+			<content>小鹅毛，飘呀飘，</content>
+			<sound>e3.wav</sound>
+		</section>
+		<section id="5">
+			<content>飘下地，睡着了。</content>
+			<sound>e4.wav</sound>
+		</section>
+	</rhythm>
+
+	<rhythm id="10">
+    <name>光脚丫</name>
+    <pic>光脚丫.png</pic>
+		<section id="1">
+			<content>光脚丫</content>
+			<sound>guang0.wav</sound>
+		</section>
+		<section id="2">
+			<content>小娃娃，光脚丫，</content>
+			<sound>guang1.wav</sound>
+		</section>
+		<section id="3">
+			<content>扶着走，跪着爬，</content>
+			<sound>guang2.wav</sound>
+		</section>
+		<section id="4">
+			<content>蹲一蹲，站一站，</content>
+			<sound>guang3.wav</sound>
+		</section>
+		<section id="5">
+			<content>嘣嘣跳，快长大。</content>
+			<sound>guang4.wav</sound>
+		</section>
+	</rhythm>
+
+	<rhythm id="11">
+    <name>拍拍手</name>
+    <pic>拍拍手.png</pic>
+		<section id="1">
+			<content>拍拍手</content>
+			<sound>pai0.wav</sound>
+		</section>
+		<section id="2">
+			<content>拍拍手，点点头，</content>
+			<sound>pai1.wav</sound>
+		</section>
+		<section id="3">
+			<content>敬个礼，握握手，</content>
+			<sound>pai2.wav</sound>
+		</section>
+		<section id="4">
+			<content>拍拍手，点点头，</content>
+			<sound>pai3.wav</sound>
+		</section>
+		<section id="5">
+			<content>笑嘻嘻，好朋友。</content>
+			<sound>pai4.wav</sound>
+		</section>
+	</rhythm>
+
+<rhythm id="12">
+    <name>扔皮球</name>
+    <pic>扔皮球.png</pic>
+		<section id="1">
+			<content>扔皮球</content>
+			<sound>reng0.wav</sound>
+		</section>
+		<section id="2">
+			<content>小皮球，举高高，</content>
+			<sound>reng1.wav</sound>
+		</section>
+		<section id="3">
+			<content>扔出去，它就跳，</content>
+			<sound>reng2.wav</sound>
+		</section>
+		<section id="4">
+			<content>跳到东，跳到西，</content>
+			<sound>reng3.wav</sound>
+		</section>
+		<section id="5">
+			<content>跳到鞋里藏猫猫。</content>
+			<sound>reng4.wav</sound>
+		</section>
+	</rhythm>
+
+<rhythm id="13">
+    <name>学画画</name>
+    <pic>学画画.png</pic>
+		<section id="1">
+			<content>学画画</content>
+			<sound>xue0.wav</sound>
+		</section>
+		<section id="2">
+			<content>小娃娃，学画画，</content>
+			<sound>xue1.wav</sound>
+		</section>
+		<section id="3">
+			<content>大蜡笔，手中拿，</content>
+			<sound>xue2.wav</sound>
+		</section>
+		<section id="4">
+			<content>画小鸭，叫嘎嘎，</content>
+			<sound>xue3.wav</sound>
+		</section>
+		<section id="5">
+			<content>画小马，骑回家。</content>
+			<sound>xue4.wav</sound>
+		</section>
+	</rhythm>
+
+<rhythm id="14">
+    <name>大鞋子</name>
+    <pic>大鞋子.png</pic>
+		<section id="1">
+			<content>大鞋子</content>
+			<sound>xie0.wav</sound>
+		</section>
+		<section id="2">
+			<content>大鞋子，像只船，</content>
+			<sound>xie1.wav</sound>
+		</section>
+		<section id="3">
+			<content>爸爸穿，我也穿，</content>
+			<sound>xie2.wav</sound>
+		</section>
+		<section id="4">
+			<content>一二一，向前走，</content>
+			<sound>xie3.wav</sound>
+		</section>
+		<section id="5">
+			<content>走呀走，翻了“船”。</content>
+			<sound>xie4.wav</sound>
+		</section>
+	</rhythm>
+
+<rhythm id="15">
+    <name>搭积木</name>
+    <pic>搭积木.png</pic>
+		<section id="1">
+			<content>搭积木</content>
+			<sound>da0.wav</sound>
+		</section>
+		<section id="2">
+			<content>大积木，红黄蓝，</content>
+			<sound>da1.wav</sound>
+		</section>
+		<section id="3">
+			<content>小宝宝，最爱玩，</content>
+			<sound>da2.wav</sound>
+		</section>
+		<section id="4">
+			<content>搭火车，钻山洞，</content>
+			<sound>da3.wav</sound>
+		</section>
+		<section id="5">
+			<content>盖高楼，连着天。</content>
+			<sound>da4.wav</sound>
+		</section>
+	</rhythm>
+
+
+<rhythm id="16">
+    <name>上楼梯</name>
+    <pic>上楼梯.png</pic>
+		<section id="1">
+			<content>上楼梯</content>
+			<sound>shang0.wav</sound>
+		</section>
+		<section id="2">
+			<content>一二三，三二一，</content>
+			<sound>shang1.wav</sound>
+		</section>
+		<section id="3">
+			<content>小宝宝，上楼梯，</content>
+			<sound>shang2.wav</sound>
+		</section>
+		<section id="4">
+			<content>不用扶，不用抱，</content>
+			<sound>shang3.wav</sound>
+		</section>
+		<section id="5">
+			<content>跨大步，走上去。</content>
+			<sound>shang4.wav</sound>
+		</section>
+	</rhythm>
+
+<rhythm id="17">
+    <name>洗澡歌</name>
+    <pic>洗澡歌.png</pic>
+		<section id="1">
+			<content>洗澡歌</content>
+			<sound>xi0.wav</sound>
+		</section>
+		<section id="2">
+			<content>小鸭子，嘎嘎叫，</content>
+			<sound>xi1.wav</sound>
+		</section>
+		<section id="3">
+			<content>走呀走，摇呀摇，</content>
+			<sound>xi2.wav</sound>
+		</section>
+		<section id="4">
+			<content>见了水，要洗澡，</content>
+			<sound>xi3.wav</sound>
+		</section>
+		<section id="5">
+			<content>扑嗵嗵，往下跳。</content>
+			<sound>xi4.wav</sound>
+		</section>
+	</rhythm>
+
+<rhythm id="18">
+    <name>讲故事</name>
+    <pic>讲故事.png</pic>
+		<section id="1">
+			<content>讲故事</content>
+			<sound>jiang0.wav</sound>
+		</section>
+		<section id="2">
+			<content>月光下，摇篮旁，</content>
+			<sound>jiang1.wav</sound>
+		</section>
+		<section id="3">
+			<content>宝宝听，妈妈讲，</content>
+			<sound>jiang2.wav</sound>
+		</section>
+		<section id="4">
+			<content>小猴子，捞月亮，</content>
+			<sound>jiang3.wav</sound>
+		</section>
+		<section id="5">
+			<content>月亮和它捉迷藏。</content>
+			<sound>jiang4.wav</sound>
+		</section>
+	</rhythm>
+
+<rhythm id="19">
+    <name>小星星</name>
+    <pic>小星星.png</pic>
+		<section id="1">
+			<content>小星星</content>
+			<sound>xing0.wav</sound>
+		</section>
+		<section id="2">
+			<content>小星星，亮晶晶，</content>
+			<sound>xing1.wav</sound>
+		</section>
+		<section id="3">
+			<content>白天睡，晚上醒，</content>
+			<sound>xing2.wav</sound>
+		</section>
+		<section id="4">
+			<content>不说话，眨眼睛，</content>
+			<sound>xing3.wav</sound>
+		</section>
+		<section id="5">
+			<content>看宝宝，笑盈盈。</content>
+			<sound>xing4.wav</sound>
+		</section>
+	</rhythm>
+
+<rhythm id="20">
+    <name>睡着了</name>
+    <pic>睡着了.png</pic>
+		<section id="1">
+			<content>睡着了</content>
+			<sound>shui0.wav</sound>
+		</section>
+		<section id="2">
+			<content>摇篮里，静悄悄，</content>
+			<sound>shui1.wav</sound>
+		</section>
+		<section id="3">
+			<content>小宝宝，要睡觉，</content>
+			<sound>shui2.wav</sound>
+		</section>
+		<section id="4">
+			<content>闭上眼，盖好被，</content>
+			<sound>shui3.wav</sound>
+		</section>
+		<section id="5">
+			<content>小宝宝，睡着了。</content>
+			<sound>shui4.wav</sound>
+		</section>
+	</rhythm>
+
+</rhythmlist>
