@@ -37,6 +37,7 @@ namespace UnityGames
 
         private void back_Click(object sender, RoutedEventArgs e)
         {
+            UnityGames.GamePage.AppCallBack.UnityPause(1);
             this.Frame.Navigate(typeof(StarrySky.MainPage));
         }
 
@@ -61,8 +62,10 @@ namespace UnityGames
                     scentNum = -1;
                     break;
             }
-            StarrySky.App.AppCallBacks.SetAppArguments(scentNum.ToString());
+            UnityGames.GamePage.AppCallBack = new AppCallbacks();
+            UnityGames.GamePage.AppCallBack.SetAppArguments(scentNum.ToString());
             UnityGamePage.Navigate(typeof(UnityGames.GamePage));
         }
+
     }
 }

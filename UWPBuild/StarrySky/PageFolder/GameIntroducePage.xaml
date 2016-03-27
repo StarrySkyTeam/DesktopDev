@@ -1,8 +1,8 @@
 ﻿<Page
-    x:Class="UnityGames.MainPage"
+    x:Class="StarrySky.GameIntroducePage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:UnityGames"
+    xmlns:local="using:StarrySky"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -12,15 +12,19 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <Grid Grid.Row="0">
+            <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Button Grid.Column="0" Name="back" Click="back_Click" FontFamily="Segoe MDL2 Assets" Content="&#xE72B;" Width="50" Height="50" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"/>
+                <TextBlock Grid.Column="1" Name="GameName" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
             </Grid>
-            <Frame Grid.Row="1" Name="UnityGamePage" />
+            <Frame Grid.Row="1" Name="WebFrame"/>
+            <Button Grid.Row="2" Name="test" Click="test_Click" Content="test"/>
+            <Button Grid.Row="2" Name="GameButton" Click="GameButton_Click" Content="看完了，去玩游戏" HorizontalAlignment="Center" Margin="0,0,0,20"/>
         </Grid>
     </Grid>
 </Page>

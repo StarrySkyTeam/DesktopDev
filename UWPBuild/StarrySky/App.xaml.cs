@@ -26,14 +26,14 @@ namespace StarrySky
 	/// </summary>
 	sealed partial class App : Application
 	{
-		private AppCallbacks appCallbacks;
-		public SplashScreen splashScreen;
+		//private AppCallbacks appCallbacks;
+		//public SplashScreen splashScreen;
 
-        static public AppCallbacks AppCallBacks
-        {
-            private set;
-            get;
-        }
+  //      static public AppCallbacks AppCallBacks
+  //      {
+  //          private set;
+  //          get;
+  //      }
 		
 		/// <summary>
 		/// Initializes the singleton application object.  This is the first line of authored code
@@ -42,8 +42,8 @@ namespace StarrySky
 		public App()
 		{
 			this.InitializeComponent();
-			appCallbacks = new AppCallbacks();
-            AppCallBacks = appCallbacks;
+			//appCallbacks = new AppCallbacks();
+   //         AppCallBacks = appCallbacks;
 		}
 
 
@@ -64,7 +64,7 @@ namespace StarrySky
 		/// <param name="args"></param>
 		protected override void OnFileActivated(FileActivatedEventArgs args)
 		{
-			splashScreen = args.SplashScreen;
+			//splashScreen = args.SplashScreen;
 			InitializeUnity();
 		}
 
@@ -76,7 +76,7 @@ namespace StarrySky
 		/// <param name="args">Details about the launch request and process.</param>
 		protected override void OnLaunched(LaunchActivatedEventArgs args)
 		{
-			splashScreen = args.SplashScreen;
+			//splashScreen = args.SplashScreen;
 			InitializeUnity();
 		}
 
@@ -92,7 +92,7 @@ namespace StarrySky
 
             // Do not repeat app initialization when the Window already has content,
             // just ensure that the window is active
-            if (rootFrame == null && !appCallbacks.IsInitialized())
+            if (rootFrame == null /*&& !appCallbacks.IsInitialized()*/)
             {
                 rootFrame = new Frame();
                 Window.Current.Content = rootFrame;

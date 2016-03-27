@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<games>
+  <game id="0">
+    <name>字母表</name>
+    <mark>AlphaBeta</mark>
+    <logo>AlphaBeta</logo>
+    <introduce>AlphaBeta</introduce>
+  </game>
+  <game id="1">
+    <name>三字儿歌</name>
+    <mark>NurseryRhythm</mark>
+    <logo>NurseryRhythm</logo>
+    <introduce>NurseryRhythm</introduce>
+  </game>
+  <game id="2">
+    <name>词汇涂色</name>
+    <mark>ColorPaint</mark>
+    <logo>ColorPaint</logo>
+    <introduce>ColorPaint</introduce>
+  </game>
+  <game id="3">
+    <name>画X画O</name>
+    <mark>DrawShape</mark>
+    <logo>DrawShape</logo>
+    <introduce>DrawShape</introduce>
+  </game>
+  <game id="4">
+    <name>拼图</name>
+    <mark>Puzzle</mark>
+    <logo>Puzzle</logo>
+    <introduce>Puzzle</introduce>
+  </game>
+  <game id="5">
+    <name>打地鼠</name>
+    <mark>HitMouse</mark>
+    <logo>HitMouse</logo>
+    <introduce>HitMouse</introduce>
+  </game>
+  <game id="6">
+    <name>音乐箭头</name>
+    <mark>MusicArrow</mark>
+    <logo>MusicArrow</logo>
+    <introduce>MusicArrow</introduce>
+  </game>
+</games>

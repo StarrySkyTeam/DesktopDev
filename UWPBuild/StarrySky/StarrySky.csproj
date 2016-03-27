@@ -253,6 +253,18 @@
     <Content Include="ResourceFolder\AlphaBeta\9ui.jpg" />
     <Content Include="ResourceFolder\AlphaBeta\9ui.mp3" />
     <Content Include="ResourceFolder\AlphaBeta\AlphaBeta.xml" />
+    <Content Include="ResourceFolder\Games\AlphaBeta.html" />
+    <Content Include="ResourceFolder\Games\AlphaBeta.png" />
+    <Content Include="ResourceFolder\Games\ColorPaint.png" />
+    <Content Include="ResourceFolder\Games\DrawShape.png" />
+    <Content Include="ResourceFolder\Games\games.js" />
+    <Content Include="ResourceFolder\Games\games.xml" />
+    <Content Include="ResourceFolder\Games\HitMouse.png" />
+    <Content Include="ResourceFolder\Games\MusicArrow.png" />
+    <Content Include="ResourceFolder\Games\MusicMiao.png" />
+    <Content Include="ResourceFolder\Games\NurseryRhythm.png" />
+    <Content Include="ResourceFolder\Games\Puzzle.png" />
+    <Content Include="ResourceFolder\Games\Unlock.png" />
     <Content Include="ResourceFolder\MainPageIntroduce.html" />
     <Content Include="ResourceFolder\NurseryRhythm\che0.wav" />
     <Content Include="ResourceFolder\NurseryRhythm\che1.wav" />
@@ -381,6 +393,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="PageFolder\GameIntroducePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageFolder\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -394,6 +410,7 @@
       <SubType>Designer</SubType>
     </Page>
     <Compile Include="ControlFolder\AlphaBetaClass.cs" />
+    <Compile Include="ControlFolder\GameProcessClass.cs" />
     <Compile Include="ControlFolder\Library.cs" />
     <Compile Include="ControlFolder\NurseryRhythmClass.cs" />
     <Compile Include="PageFolder\AlphaBeta\MainPage.xaml.cs">
@@ -404,6 +421,9 @@
     </Compile>
     <Compile Include="PageFolder\GameCenterPage.xaml.cs">
       <DependentUpon>GameCenterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageFolder\GameIntroducePage.xaml.cs">
+      <DependentUpon>GameIntroducePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageFolder\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>

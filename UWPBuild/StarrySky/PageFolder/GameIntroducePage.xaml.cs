@@ -13,8 +13,6 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-using UnityPlayer;
-
 // “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上提供
 
 namespace StarrySky
@@ -22,20 +20,32 @@ namespace StarrySky
     /// <summary>
     /// 可用于自身或导航至 Frame 内部的空白页。
     /// </summary>
-    public sealed partial class GameCenterPage : Page
+    public sealed partial class GameIntroducePage : Page
     {
-        GameProcessClass GameProcessClass = new GameProcessClass();
-        public GameCenterPage()
+        private string gameId;
+        public GameIntroducePage()
         {
             this.InitializeComponent();
-            GameProcessClass.displayGames(ref gameDisplay);
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            gameId = e.Parameter.ToString();
+            GameName.Text = @"""" +(GameProcessClass.getGameModel(gameId)).name+@""" 游戏介绍";
+            WebFrame.Navigate(typeof(WebPage),GameProcessClass.getGameIntroduce(gameId));
             base.OnNavigatedTo(e);
         }
+        private void GameButton_Click(object sender, RoutedEventArgs e)
+        {
+            GameProcessClass.SwitchToGame(gameId);
+        }
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
+        }
 
+        private async void test_Click(object sender, RoutedEventArgs e)
+        {
+            await WebPage.WebMainView.InvokeScriptAsync("say", null);
+        }
     }
-
-
 }
