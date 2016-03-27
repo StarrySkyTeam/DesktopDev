@@ -29,7 +29,7 @@ namespace UnityGames
     {
         private WinRTBridge.WinRTBridge _bridge;
 
-        //private SplashScreen splash;
+        private SplashScreen splash;
         private Rect splashImageRect;
         private WindowSizeChangedEventHandler onResizeHandler;
         AppCallbacks appCallbacks = AppCallbacks.Instance;
@@ -43,32 +43,41 @@ namespace UnityGames
         public GamePage()
         {
             this.InitializeComponent();
-            NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Required;
+            if (appCallbacks.IsInitialized())
+            {
+                appCallbacks.UnityPause(0);
+            }
+            else
+            {
+                NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Required;
 
-            AppCallBack = appCallbacks;
-            // Setup scripting bridge
-            _bridge = new WinRTBridge.WinRTBridge();
-            //appCallbacks = new AppCallbacks();
-            appCallbacks.SetBridge(_bridge);
+                AppCallBack = appCallbacks;
+                // Setup scripting bridge
+                _bridge = new WinRTBridge.WinRTBridge();
+                //appCallbacks = new AppCallbacks();
+                appCallbacks.SetBridge(_bridge);
 
-            appCallbacks.RenderingStarted += () => { RemoveSplashScreen(); };
+                appCallbacks.RenderingStarted += () => { RemoveSplashScreen(); };
 
 #if !UNITY_WP_8_1
-            appCallbacks.SetKeyboardTriggerControl(this);
+                appCallbacks.SetKeyboardTriggerControl(this);
 #endif
-            appCallbacks.SetSwapChainPanel(GetSwapChainPanel());
-            appCallbacks.SetCoreWindowEvents(Window.Current.CoreWindow);
-            appCallbacks.InitializeD3DXAML();
+                appCallbacks.SetSwapChainPanel(GetSwapChainPanel());
+                appCallbacks.SetCoreWindowEvents(Window.Current.CoreWindow);
+                appCallbacks.InitializeD3DXAML();
 
-            //splash = ((StarrySky.App)StarrySky.App.Current).splashScreen;
-            GetSplashBackgroundColor();
-            OnResize();
-            onResizeHandler = new WindowSizeChangedEventHandler((o, e) => OnResize());
-            Window.Current.SizeChanged += onResizeHandler;
+                //splash = ((StarrySky.App)StarrySky.App.Current).splashScreen;
+                GetSplashBackgroundColor();
+                OnResize();
+                onResizeHandler = new WindowSizeChangedEventHandler((o, e) => OnResize());
+                Window.Current.SizeChanged += onResizeHandler;
 
 #if UNITY_WP_8_1
 			SetupLocationService();
 #endif
+
+            }
+
         }
 
         /// <summary>
