@@ -12,7 +12,6 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using UnityPlayer;
 using Windows.ApplicationModel.Activation;
 
 
@@ -37,7 +36,6 @@ namespace UnityGames
 
         private void back_Click(object sender, RoutedEventArgs e)
         {
-            UnityGames.GamePage.AppCallBack.UnityPause(1);
             this.Frame.Navigate(typeof(StarrySky.MainPage));
         }
 
@@ -62,8 +60,6 @@ namespace UnityGames
                     scentNum = -1;
                     break;
             }
-            UnityGames.GamePage.AppCallBack = new AppCallbacks();
-            UnityGames.GamePage.AppCallBack.SetAppArguments(scentNum.ToString());
             UnityGamePage.Navigate(typeof(UnityGames.GamePage));
         }
 

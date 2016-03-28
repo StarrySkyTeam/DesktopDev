@@ -8,9 +8,4 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <SwapChainPanel x:Name="DXSwapChainPanel">
-        <Grid x:Name="ExtendedSplashGrid" Background="#222C37">
-            <Image x:Name="ExtendedSplashImage" Source="Assets/SplashScreen.png" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        </Grid>
-    </SwapChainPanel>
 </Page>

@@ -1,8 +1,0 @@
-﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <PropertyGroup>
-        <UnityInstallationDir>E:\Unity\Editor</UnityInstallationDir>
-        <UnityWSAPlayerDir>E:\Unity\Editor\Data\PlaybackEngines\MetroSupport</UnityWSAPlayerDir>
-        <UnityWSAToolsDir>$(SolutionDir)Unity\Tools</UnityWSAToolsDir>
-        <UnityProjectDir>G:\Documents\Desktop\游戏整合</UnityProjectDir>
-    </PropertyGroup>
-</Project>
