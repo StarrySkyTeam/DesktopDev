@@ -21,7 +21,8 @@
                 <Button Grid.Column="0" Name="back" Click="back_Click" FontFamily="Segoe MDL2 Assets" Content="&#xE72B;" Width="50" Height="50" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"/>
                 <TextBlock Grid.Column="1" Name="GameName" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="26.667"/>
             </Grid>
-            <Frame Grid.Row="1" Name="UnityGamePage" />
+            <WebView Grid.Row="1" Name="GamePlayer"/>
+            <TextBlock Grid.Row="1" Name="GameInfo" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="26.667" Text="正在加载。。。" Visibility="Collapsed" Canvas.ZIndex="1"/>
         </Grid>
     </Grid>
 </Page>

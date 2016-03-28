@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.ApplicationModel.Activation;
+using StarrySky;
 
 
 // “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上提供
@@ -23,6 +24,8 @@ namespace UnityGames
     public sealed partial class MainPage : Page
     {
         string gameId;
+        string gameName;
+        string gameMark;
         public MainPage()
         {
             this.InitializeComponent();
@@ -31,8 +34,24 @@ namespace UnityGames
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            gameId=e.Parameter.ToString();
-            GameName.Text =(GameProcessClass.getGameModel(gameId)).name;
+            gameId = e.Parameter.ToString();
+            gameName = (GameProcessClass.getGameModel(gameId)).name;
+            gameMark = (GameProcessClass.getGameModel(gameId)).mark;
+
+            GameName.Text = gameName;
+            GamePlayer.NavigationStarting += GamePlayer_NavigationStarting;
+            GamePlayer.DOMContentLoaded += GamePlayer_DOMContentLoaded;
+            GamePlayer.Navigate(new Uri(getUri()));
+        }
+
+        private void GamePlayer_DOMContentLoaded(WebView sender, WebViewDOMContentLoadedEventArgs args)
+        {
+            GameInfo.Visibility = Visibility.Collapsed;
+        }
+
+        private void GamePlayer_NavigationStarting(WebView sender, WebViewNavigationStartingEventArgs args)
+        {
+            GameInfo.Visibility = Visibility.Visible;
         }
 
         private void back_Click(object sender, RoutedEventArgs e)
@@ -40,21 +59,21 @@ namespace UnityGames
             this.Frame.Navigate(typeof(StarrySky.MainPage));
         }
 
-        private void NavToUnity(string GameMark)
+        private string getUri()
         {
-            switch (GameMark)
-            {
-                case "DrawShape":
-                    break;
-                case "Puzzle":
-                    break;
-                case "HitMouse":
-                    break;
-                case "MusicArrow":
-                    break;
-                default:
-                    break;
-            }
+            string uri = "http://debug.zhengzi.me/UnityGames/";
+            //uri += gameMark;
+            uri += "test";
+            uri += "/index.html";
+            Library.DebugOutput(uri);
+            return uri;
+        }
+
+        //暂时不起作用
+        private async void gameFullScreen()
+        {
+            List<string> arg = new List<string> { "1" };
+            string rev = await GamePlayer.InvokeScriptAsync("SetFullscreen", arg);
         }
 
     }
