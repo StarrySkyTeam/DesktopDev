@@ -22,7 +22,7 @@ namespace UnityGames
 
     public sealed partial class MainPage : Page
     {
-
+        string gameId;
         public MainPage()
         {
             this.InitializeComponent();
@@ -31,7 +31,8 @@ namespace UnityGames
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            NavToUnity(e.Parameter.ToString());
+            gameId=e.Parameter.ToString();
+            GameName.Text =(GameProcessClass.getGameModel(gameId)).name;
         }
 
         private void back_Click(object sender, RoutedEventArgs e)
@@ -39,28 +40,21 @@ namespace UnityGames
             this.Frame.Navigate(typeof(StarrySky.MainPage));
         }
 
-        private void NavToUnity(string GameName)
+        private void NavToUnity(string GameMark)
         {
-            int scentNum;
-            switch (GameName)
+            switch (GameMark)
             {
                 case "DrawShape":
-                    scentNum = 1;
                     break;
                 case "Puzzle":
-                    scentNum = 2;
                     break;
                 case "HitMouse":
-                    scentNum = 3;
                     break;
                 case "MusicArrow":
-                    scentNum = 4;
                     break;
                 default:
-                    scentNum = -1;
                     break;
             }
-            UnityGamePage.Navigate(typeof(UnityGames.GamePage));
         }
 
     }

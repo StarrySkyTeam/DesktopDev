@@ -36,6 +36,10 @@ namespace StarrySky
         }
         private void GameButton_Click(object sender, RoutedEventArgs e)
         {
+            if (noMore.IsChecked == true)
+            {
+                GameProcessClass.SetNoIntroduce(GameProcessClass.getGameModel(gameId).name);
+            }
             GameProcessClass.SwitchToGame(gameId);
         }
         private void back_Click(object sender, RoutedEventArgs e)
@@ -43,9 +47,5 @@ namespace StarrySky
             this.Frame.Navigate(typeof(MainPage));
         }
 
-        private async void test_Click(object sender, RoutedEventArgs e)
-        {
-            await WebPage.WebMainView.InvokeScriptAsync("say", null);
-        }
     }
 }

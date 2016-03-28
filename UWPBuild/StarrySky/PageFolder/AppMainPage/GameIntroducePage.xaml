@@ -13,6 +13,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -23,8 +24,8 @@
                 <TextBlock Grid.Column="1" Name="GameName" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
             </Grid>
             <Frame Grid.Row="1" Name="WebFrame"/>
-            <Button Grid.Row="2" Name="test" Click="test_Click" Content="test"/>
-            <Button Grid.Row="2" Name="GameButton" Click="GameButton_Click" Content="看完了，去玩游戏" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+            <CheckBox Grid.Row="2" Name="noMore" Content="我知道了，以后不再显示" HorizontalAlignment="Center" />
+            <Button Grid.Row="3" Name="GameButton" Click="GameButton_Click" Content="看完了，去玩游戏" HorizontalAlignment="Center" Margin="0,10,0,20"/>
         </Grid>
     </Grid>
 </Page>

@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="StarrySky.SettingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:StarrySky"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid Margin="10,10,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="应用程序设置" FontSize="26.667" Margin="0,0,0,15"/>
+            <StackPanel Grid.Row="1" Orientation="Vertical">
+                <TextBlock FontSize="20" Text="游戏提示设置" Margin="0,0,0,10"/>
+                <Button Name="resetTips" Click="resetTips_Click" Content="重置所有游戏提示"/>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Orientation="Vertical" Margin="0,20,0,0">
+                <TextBlock Text="联系我们" FontSize="20"/>
+                <TextBlock FontSize="15" Margin="10,0,0,0">
+                    <Hyperlink NavigateUri="http://weibo.com/p/1005055815345256">
+                        微博：@StarrySkyAPP 
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

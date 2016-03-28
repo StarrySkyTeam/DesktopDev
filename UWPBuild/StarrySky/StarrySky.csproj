@@ -89,9 +89,6 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="PageFolder\ColorPaint\html\canju.png" />
     <Content Include="PageFolder\ColorPaint\html\chengbao.png" />
     <Content Include="PageFolder\ColorPaint\html\chezi.png" />
@@ -205,7 +202,8 @@
     <Content Include="ResourceFolder\Games\NurseryRhythm.png" />
     <Content Include="ResourceFolder\Games\Puzzle.png" />
     <Content Include="ResourceFolder\Games\Unlock.png" />
-    <Content Include="ResourceFolder\MainPageIntroduce.html" />
+    <Content Include="ResourceFolder\AppMainPage\introduce.css" />
+    <Content Include="ResourceFolder\AppMainPage\introduce.html" />
     <Content Include="ResourceFolder\NurseryRhythm\che0.wav" />
     <Content Include="ResourceFolder\NurseryRhythm\che1.wav" />
     <Content Include="ResourceFolder\NurseryRhythm\che2.wav" />
@@ -334,28 +332,28 @@
     <Compile Include="PageFolder\AlphaBeta\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PageFolder\AppMainPage\SettingPage.xaml.cs">
+      <DependentUpon>SettingPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageFolder\ColorPaint\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageFolder\GameCenterPage.xaml.cs">
+    <Compile Include="PageFolder\AppMainPage\GameCenterPage.xaml.cs">
       <DependentUpon>GameCenterPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageFolder\GameIntroducePage.xaml.cs">
+    <Compile Include="PageFolder\AppMainPage\GameIntroducePage.xaml.cs">
       <DependentUpon>GameIntroducePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageFolder\MainPage.xaml.cs">
+    <Compile Include="PageFolder\AppMainPage\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageFolder\NurseryRhythm\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageFolder\Unity\GamePage.xaml.cs">
-      <DependentUpon>GamePage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="PageFolder\Unity\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageFolder\WebPage.xaml.cs">
+    <Compile Include="PageFolder\AppMainPage\WebPage.xaml.cs">
       <DependentUpon>WebPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -387,19 +385,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="PageFolder\AppMainPage\SettingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageFolder\ColorPaint\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="PageFolder\GameCenterPage.xaml">
+    <Page Include="PageFolder\AppMainPage\GameCenterPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageFolder\GameIntroducePage.xaml">
+    <Page Include="PageFolder\AppMainPage\GameIntroducePage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="PageFolder\MainPage.xaml">
+    <Page Include="PageFolder\AppMainPage\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -407,15 +409,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="PageFolder\Unity\GamePage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="PageFolder\Unity\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="PageFolder\WebPage.xaml">
+    <Page Include="PageFolder\AppMainPage\WebPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

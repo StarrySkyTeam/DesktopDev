@@ -60,7 +60,7 @@ namespace StarrySky
             switch (listName)
             {
                 case "Illustration":
-                    MainFrame.Navigate(typeof(WebPage), "ms-appx-web:///ResourceFolder/MainPageIntroduce.html");
+                    MainFrame.Navigate(typeof(WebPage), "ms-appx-web:///ResourceFolder/AppMainPage/introduce.html");
                     break;
                 case "GameCenter":
                     MainFrame.Navigate(typeof(GameCenterPage));
@@ -79,6 +79,7 @@ namespace StarrySky
                     }
                     break;
                 case "PersonalSettings":
+                    MainFrame.Navigate(typeof(SettingPage));
                     break;
                 default:
                     MainFrame.Navigate(typeof(WebPage), "ms-appx-web:///ResourceFolder/MainPageIntroduce.html");

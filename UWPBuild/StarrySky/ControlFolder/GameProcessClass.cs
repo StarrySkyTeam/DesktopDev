@@ -62,16 +62,16 @@ public class GameProcessClass
         }
     }
 
-    public void SetNoIntroduce(string gameName)
+    public static void SetNoIntroduce(string gameName)
     {
         Library.SaveSetting(gameName + "Introduce", true);
     }
 
-    public void SetAllIntroduce(List<string> gameNames)
+    public void SetAllIntroduce()
     {
-        foreach (string gameName in gameNames)
+        foreach (gameModel game in gamesModel)
         {
-            Library.SaveSetting(gameName + "Introduce", false);
+            Library.SaveSetting(game.name + "Introduce", false);
         }
     }
 
@@ -141,7 +141,7 @@ public class GameProcessClass
             case "Puzzle":
             case "HitMouse":
             case "MusicArrow":
-                navTo.Navigate(typeof(UnityGames.MainPage), gameMark);
+                navTo.Navigate(typeof(UnityGames.MainPage), gameId);
                 break;
         }
     }
