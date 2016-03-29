@@ -125,11 +125,7 @@ public class GameProcessClass
             case "NurseryRhythm":
                 navTo.Navigate(typeof(NurseryRhyme.MainPage));
                 break;
-            case "ColorPaint":
-            case "DrawShape":
-            case "Puzzle":
-            case "HitMouse":
-            case "MusicArrow":
+            default:
                 navTo.Navigate(typeof(OnlineGames.MainPage), gameId);
                 break;
         }

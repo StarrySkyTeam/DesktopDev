@@ -42,4 +42,10 @@
     <logo>MusicArrow</logo>
     <introduce>MusicArrow</introduce>
   </game>
+  <game id="7">
+    <name>解锁游戏</name>
+    <mark>Unlock</mark>
+    <logo>Unlock</logo>
+    <introduce>Unlock</introduce>
+  </game>
 </games>

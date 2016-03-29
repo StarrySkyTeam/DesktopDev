@@ -66,6 +66,7 @@ namespace StarrySky
                     MainFrame.Navigate(typeof(GameCenterPage));
                     break;
                 case "ExpertEvaluation":
+                    MainFrame.Navigate(typeof(WebPage), "http://debug.zhengzi.me/questionnaire/index.html");
                     break;
                 case "Forum":
                     double deviceWidth = ApplicationView.GetForCurrentView().VisibleBounds.Width;
