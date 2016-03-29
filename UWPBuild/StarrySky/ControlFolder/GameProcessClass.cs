@@ -81,23 +81,13 @@ public class GameProcessClass
         display.Children.Clear();
         foreach (gameModel oneGame in gamesModel)
         {
-            //StackPanel gameInfo = new StackPanel();
-            //gameInfo.Orientation = Orientation.Vertical;
             Image gameLogo = new Image();
             string logoSource = "ms-appx:///ResourceFolder/Games/" + oneGame.logo + ".png";
             //Library.DebugOutput(logoSource);
             gameLogo.Source = new BitmapImage(new Uri(logoSource));
             gameLogo.HorizontalAlignment = HorizontalAlignment.Center;
             gameLogo.VerticalAlignment = VerticalAlignment.Top;
-            //TextBlock gameName = new TextBlock();
-            //gameName.Text = oneGame.name;
-            //gameName.HorizontalAlignment = HorizontalAlignment.Center;
-            //gameName.VerticalAlignment = VerticalAlignment.Bottom;
-            //gameName.FontSize = 30;
-            //gameInfo.Children.Add(gameLogo);
-            //gameInfo.Children.Add(gameName);
             Button gameButton = new Button();
-            //gameButton.Content = gameInfo;
             gameButton.Content = gameLogo;
             gameButton.Name = oneGame.id.ToString();
             gameButton.Click += GameButton_Click;
@@ -136,13 +126,11 @@ public class GameProcessClass
                 navTo.Navigate(typeof(NurseryRhyme.MainPage));
                 break;
             case "ColorPaint":
-                navTo.Navigate(typeof(ColorPaint.MainPage));
-                break;
             case "DrawShape":
             case "Puzzle":
             case "HitMouse":
             case "MusicArrow":
-                navTo.Navigate(typeof(UnityGames.MainPage), gameId);
+                navTo.Navigate(typeof(OnlineGames.MainPage), gameId);
                 break;
         }
     }

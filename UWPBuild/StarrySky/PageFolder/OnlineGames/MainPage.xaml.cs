@@ -18,7 +18,7 @@ using StarrySky;
 
 // “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上提供
 
-namespace UnityGames
+namespace OnlineGames
 {
 
     public sealed partial class MainPage : Page
@@ -61,9 +61,8 @@ namespace UnityGames
 
         private string getUri()
         {
-            string uri = "http://debug.zhengzi.me/UnityGames/";
-            //uri += gameMark;
-            uri += "test";
+            string uri = "http://debug.zhengzi.me/games/";
+            uri += gameMark;
             uri += "/index.html";
             Library.DebugOutput(uri);
             return uri;

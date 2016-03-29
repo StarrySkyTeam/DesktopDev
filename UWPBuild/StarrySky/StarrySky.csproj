@@ -90,12 +90,6 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <Content Include="PageFolder\ColorPaint\html\canju.png" />
-    <Content Include="PageFolder\ColorPaint\html\chengbao.png" />
-    <Content Include="PageFolder\ColorPaint\html\chezi.png" />
-    <Content Include="PageFolder\ColorPaint\html\ColorPaint.html" />
-    <Content Include="PageFolder\ColorPaint\html\feiji.png" />
-    <Content Include="PageFolder\ColorPaint\html\huoche.png" />
     <Content Include="ResourceFolder\AlphaBeta\10ao.jpg" />
     <Content Include="ResourceFolder\AlphaBeta\10ao.mp3" />
     <Content Include="ResourceFolder\AlphaBeta\11ou.jpg" />
@@ -195,7 +189,6 @@
     <Content Include="ResourceFolder\Games\AlphaBeta.png" />
     <Content Include="ResourceFolder\Games\ColorPaint.png" />
     <Content Include="ResourceFolder\Games\DrawShape.png" />
-    <Content Include="ResourceFolder\Games\games.js" />
     <Content Include="ResourceFolder\Games\games.xml" />
     <Content Include="ResourceFolder\Games\HitMouse.png" />
     <Content Include="ResourceFolder\Games\MusicArrow.png" />
@@ -336,9 +329,6 @@
     <Compile Include="PageFolder\AppMainPage\SettingPage.xaml.cs">
       <DependentUpon>SettingPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageFolder\ColorPaint\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="PageFolder\AppMainPage\GameCenterPage.xaml.cs">
       <DependentUpon>GameCenterPage.xaml</DependentUpon>
     </Compile>
@@ -351,7 +341,7 @@
     <Compile Include="PageFolder\NurseryRhythm\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageFolder\Unity\MainPage.xaml.cs">
+    <Compile Include="PageFolder\OnlineGames\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageFolder\AppMainPage\WebPage.xaml.cs">
@@ -390,10 +380,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageFolder\ColorPaint\MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="PageFolder\AppMainPage\GameCenterPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -410,7 +396,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="PageFolder\Unity\MainPage.xaml">
+    <Page Include="PageFolder\OnlineGames\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
