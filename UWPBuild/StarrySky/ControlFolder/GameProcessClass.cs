@@ -81,23 +81,24 @@ public class GameProcessClass
         display.Children.Clear();
         foreach (gameModel oneGame in gamesModel)
         {
-            StackPanel gameInfo = new StackPanel();
-            gameInfo.Orientation = Orientation.Vertical;
+            //StackPanel gameInfo = new StackPanel();
+            //gameInfo.Orientation = Orientation.Vertical;
             Image gameLogo = new Image();
             string logoSource = "ms-appx:///ResourceFolder/Games/" + oneGame.logo + ".png";
-            Library.DebugOutput(logoSource);
+            //Library.DebugOutput(logoSource);
             gameLogo.Source = new BitmapImage(new Uri(logoSource));
             gameLogo.HorizontalAlignment = HorizontalAlignment.Center;
             gameLogo.VerticalAlignment = VerticalAlignment.Top;
-            TextBlock gameName = new TextBlock();
-            gameName.Text = oneGame.name;
-            gameName.HorizontalAlignment = HorizontalAlignment.Center;
-            gameName.VerticalAlignment = VerticalAlignment.Bottom;
-            gameName.FontSize = 30;
-            gameInfo.Children.Add(gameLogo);
-            gameInfo.Children.Add(gameName);
+            //TextBlock gameName = new TextBlock();
+            //gameName.Text = oneGame.name;
+            //gameName.HorizontalAlignment = HorizontalAlignment.Center;
+            //gameName.VerticalAlignment = VerticalAlignment.Bottom;
+            //gameName.FontSize = 30;
+            //gameInfo.Children.Add(gameLogo);
+            //gameInfo.Children.Add(gameName);
             Button gameButton = new Button();
-            gameButton.Content = gameInfo;
+            //gameButton.Content = gameInfo;
+            gameButton.Content = gameLogo;
             gameButton.Name = oneGame.id.ToString();
             gameButton.Click += GameButton_Click;
             gameButton.Background = new SolidColorBrush(Colors.White);
