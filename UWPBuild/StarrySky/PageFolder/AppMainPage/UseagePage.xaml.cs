@@ -20,22 +20,11 @@ namespace StarrySky
     /// <summary>
     /// 可用于自身或导航至 Frame 内部的空白页。
     /// </summary>
-    public sealed partial class SettingPage : Page
+    public sealed partial class UseagePage : Page
     {
-        public SettingPage()
+        public UseagePage()
         {
             this.InitializeComponent();
-        }
-
-        private void resetTips_Click(object sender, RoutedEventArgs e)
-        {
-            GameProcessClass GameProcessClass = new GameProcessClass();
-            GameProcessClass.SetAllIntroduce();
-        }
-
-        private void SoftwareIntroduce_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(SoftwareIntroduce), "ms-appx-web:///ResourceFolder/AppMainPage/introduce.html");
         }
     }
 }

@@ -185,7 +185,15 @@
     <Content Include="ResourceFolder\AlphaBeta\9ui.jpg" />
     <Content Include="ResourceFolder\AlphaBeta\9ui.mp3" />
     <Content Include="ResourceFolder\AlphaBeta\AlphaBeta.xml" />
-    <Content Include="ResourceFolder\Games\AlphaBeta.html" />
+    <Content Include="ResourceFolder\AppMainPage\useage.jpg" />
+    <Content Include="ResourceFolder\GameIntroduce\AlphaBeta.jpg" />
+    <Content Include="ResourceFolder\GameIntroduce\ColorPaint.jpg" />
+    <Content Include="ResourceFolder\GameIntroduce\DrawShape.jpg" />
+    <Content Include="ResourceFolder\GameIntroduce\HitMouse.jpg" />
+    <Content Include="ResourceFolder\GameIntroduce\MusicArrow.jpg" />
+    <Content Include="ResourceFolder\GameIntroduce\NurseryRhythm.jpg" />
+    <Content Include="ResourceFolder\GameIntroduce\Puzzle.jpg" />
+    <Content Include="ResourceFolder\GameIntroduce\Unlock.jpg" />
     <Content Include="ResourceFolder\Games\AlphaBeta.png" />
     <Content Include="ResourceFolder\Games\ColorPaint.png" />
     <Content Include="ResourceFolder\Games\DrawShape.png" />
@@ -338,6 +346,12 @@
     <Compile Include="PageFolder\AppMainPage\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PageFolder\AppMainPage\SoftwareIntroduce.xaml.cs">
+      <DependentUpon>SoftwareIntroduce.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageFolder\AppMainPage\UseagePage.xaml.cs">
+      <DependentUpon>UseagePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageFolder\NurseryRhythm\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -391,6 +405,14 @@
     <Page Include="PageFolder\AppMainPage\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PageFolder\AppMainPage\SoftwareIntroduce.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageFolder\AppMainPage\UseagePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PageFolder\NurseryRhythm\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>

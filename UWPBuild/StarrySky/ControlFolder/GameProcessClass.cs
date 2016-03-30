@@ -147,4 +147,10 @@ public class GameProcessClass
         gameModel gameModel = gamesModel[Convert.ToInt16(gameId)];
         return gameModel;
     }
+
+    public static void makeGameIntroduce(string gameId,ref Image display)
+    {
+        string source = "ms-appx:///ResourceFolder/GameIntroduce/"+getGameModel(gameId).introduce+".jpg";
+        display.Source = new BitmapImage(new Uri(source));
+    }
 }

@@ -60,19 +60,19 @@ namespace StarrySky
             switch (listName)
             {
                 case "Illustration":
-                    MainFrame.Navigate(typeof(WebPage), "ms-appx-web:///ResourceFolder/AppMainPage/introduce.html");
+                    MainFrame.Navigate(typeof(UseagePage));
                     break;
                 case "GameCenter":
                     MainFrame.Navigate(typeof(GameCenterPage));
                     break;
                 case "ExpertEvaluation":
-                    MainFrame.Navigate(typeof(WebPage), "http://debug.zhengzi.me/questionnaire/index.html");
+                    MainFrame.Navigate(typeof(WebPage), "http://debug.zhengzi.me/questionnaire/");
                     break;
                 case "Forum":
                     double deviceWidth = ApplicationView.GetForCurrentView().VisibleBounds.Width;
                     if (deviceWidth >= 750)
                     {
-                        MainFrame.Navigate(typeof(WebPage), "http://test.zhengzi.me");
+                        MainFrame.Navigate(typeof(WebPage), "http://debug.zhengzi.me/bbs/");
                     }
                     else
                     {

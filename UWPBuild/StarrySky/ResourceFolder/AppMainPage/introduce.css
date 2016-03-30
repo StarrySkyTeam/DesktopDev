@@ -8,16 +8,11 @@ body{
     width:80%;
     margin:0 auto;
 }
-header{
-    text-align:center;
-    font-size:30px;
-    margin:10px 0;
-}
 h1{
     margin:10px 0;
     font-size:20px;
     border:solid 1px #ccc;
-    border-left:solid 10px #bbb;
+    border-left:solid 10px  #26ca28;
     border-radius:8px;
     text-indent:6px;
     line-height:40px;

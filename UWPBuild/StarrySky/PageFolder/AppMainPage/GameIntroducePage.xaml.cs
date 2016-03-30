@@ -31,7 +31,7 @@ namespace StarrySky
         {
             gameId = e.Parameter.ToString();
             GameName.Text = @"""" +(GameProcessClass.getGameModel(gameId)).name+@""" 游戏介绍";
-            WebFrame.Navigate(typeof(WebPage),GameProcessClass.getGameIntroduce(gameId));
+            GameProcessClass.makeGameIntroduce(gameId, ref IntroduceImg);
             base.OnNavigatedTo(e);
         }
         private void GameButton_Click(object sender, RoutedEventArgs e)

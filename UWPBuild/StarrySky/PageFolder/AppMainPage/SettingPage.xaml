@@ -13,17 +13,28 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <TextBlock Grid.Row="0" Text="应用程序设置" FontSize="26.667" Margin="0,0,0,15"/>
             <StackPanel Grid.Row="1" Orientation="Vertical">
                 <TextBlock FontSize="20" Text="游戏提示设置" Margin="0,0,0,10"/>
                 <Button Name="resetTips" Click="resetTips_Click" Content="重置所有游戏提示"/>
             </StackPanel>
-            <StackPanel Grid.Row="2" Orientation="Vertical" Margin="0,20,0,0">
+            <StackPanel Grid.Row="2" Orientation="Vertical" Margin="0,10,0,0">
+                <TextBlock Text="软件介绍" FontSize="20" Margin="0,0,0,10"/>
+                <Button Name="SoftwareIntroduce" Click="SoftwareIntroduce_Click" Content="点击查看软件介绍"/>
+            </StackPanel>
+            <StackPanel Grid.Row="3" Orientation="Vertical" Margin="0,20,0,0">
                 <TextBlock Text="联系我们" FontSize="20"/>
                 <TextBlock FontSize="15" Margin="10,0,0,0">
                     <Hyperlink NavigateUri="http://weibo.com/p/1005055815345256">
                         微博：@StarrySkyAPP 
+                    </Hyperlink>
+                </TextBlock>
+                <TextBlock Text="合作机构" FontSize="20"/>
+                <TextBlock FontSize="15" Margin="10,0,0,0">
+                    <Hyperlink NavigateUri="http://www.senxijiaoyu.com/">
+                        北京森熙教育咨询有限公司
                     </Hyperlink>
                 </TextBlock>
             </StackPanel>
